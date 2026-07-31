@@ -180,7 +180,7 @@ window.onscroll = function () {
 window.onload = function () {
 	let masonryWrapper = document.querySelector('.masonry-wrapper');
 	// if masonryWrapper is not null, then initialize masonry
-	if (masonryWrapper) {
+	if (masonryWrapper && typeof Masonry !== 'undefined') {
 		let masonry = new Masonry(masonryWrapper, {
 			columnWidth: 1
 		});
